@@ -149,6 +149,13 @@ platform :ios do
       api_key: api_key,
       skip_submission: false,
       ipa: "iAPS.ipa",
+      distribute_external: true,
+      groups: [
+        "Slack Users",
+        "bdb_dev testers",
+        "AutoISF",
+        "Care Givers / Support"
+      ],
       skip_waiting_for_build_processing: true,
       changelog: git_branch+" "+last_git_commit[:abbreviated_commit_hash],
     )
