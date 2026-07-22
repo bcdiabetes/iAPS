@@ -157,7 +157,7 @@ platform :ios do
         "Care Givers / Support"
       ],
       skip_waiting_for_build_processing: false,
-      changelog: git_branch+" "+last_git_commit[:abbreviated_commit_hash],
+       changelog: "monthly update",
     )
   end
 
